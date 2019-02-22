@@ -52,9 +52,8 @@ static navigationOptions = ({ navigation }) => {
 };
 
 onIncrement() {
-   this.props.navigation.setParams({ count: this.state.count + 1 })
-   // this.props.navigation.count=this.state.count ++;
-   console.warn("On Increment: ", this.props.navigation.state.params.count)
+   this.props.navigation.setParams({ count: (++ this.state.count) })
+   // console.warn("On Increment: ", this.props.navigation.state.params.count)
 }
 
 render() {
